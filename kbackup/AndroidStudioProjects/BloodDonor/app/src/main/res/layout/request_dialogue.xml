@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fadedbg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogue_title"
+        android:text="Add History"
+        android:padding="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add date"
+        android:id="@+id/date"
+        android:layout_below="@+id/dialogue_title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Pint"
+        android:id="@+id/pint"
+        android:layout_below="@+id/date"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pint"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/mybutton"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pint"
+        android:layout_alignRight="@+id/save_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="-292dp"
+        android:background="@drawable/mybutton"
+        android:text="Cancel" />
+</RelativeLayout>

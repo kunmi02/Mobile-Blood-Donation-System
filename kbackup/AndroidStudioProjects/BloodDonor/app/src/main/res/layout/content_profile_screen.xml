@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".profile_screen"
+    tools:showIn="@layout/app_bar_profile_screen"
+    android:background="@drawable/fadedbg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="62dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/search"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/Search_btn"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/donate"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/Donate_btn"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/request"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/Request_btn"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/location"
+                android:layout_marginLeft="90dp"
+                android:id="@+id/location_btn"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/history"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/history_btn"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/compatible"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="80dp"
+                android:id="@+id/Compt_btn"/>
+
+        </TableRow>
+
+    </TableLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
